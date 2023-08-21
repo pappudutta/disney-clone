@@ -17,11 +17,11 @@ function Slider() {
   };
 
   const sliderRight = e => {
-    e.scrollLeft += screenWidth - 16;
+    e.scrollLeft += screenWidth - 15;
     console.log(screenWidth);
   };
   const sliderLeft = e => {
-    e.scrollLeft -= screenWidth - 17;
+    e.scrollLeft -= screenWidth - 15;
     console.log(screenWidth);
   };
 
@@ -32,11 +32,11 @@ function Slider() {
     <div>
       <div className="text-white text-[50px] cursor-pointer">
         <HiChevronLeft
-          className="hidden md:block absolute left-0 mt-[180px]"
+          className="hidden md:block absolute left-0 mt-[180px] ml-4"
           onClick={() => sliderLeft(elementRef.current)}
         />
         <HiOutlineChevronRight
-          className="hidden md:block absolute right-0 mt-[180px]"
+          className="hidden md:block absolute right-0 mt-[180px] mr-4"
           onClick={() => sliderRight(elementRef.current)}
         />
       </div>
@@ -48,7 +48,7 @@ function Slider() {
           <img
             key={movie.id}
             src={IMAGE_BASE_URL + movie.backdrop_path}
-            className="min-w-full md:h-[390px] object-cover object-left-top mr-5 rounded-lg hover:border-[4px] border-grey-100 transition-all duration-100 ease-in-out "
+            className="min-w-full md:h-[390px] object-cover object-left-top mr-5 rounded-lg hover:border-[4px] hover:border-grey-100 transition-all duration-100 ease-in-out shadow-lg shadow-black "
           />
         ))}
       </div>
