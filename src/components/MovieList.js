@@ -31,18 +31,22 @@ function MovieList({ genreId, index_ }) {
 
   return (
     <div className="">
-      <div className="text-[30px] cursor-pointer">
+      <div className="text-[30px] cursor-pointer p-2">
         <HiChevronLeft
-          className="hidden md:block absolute left-0 mt-20 ml-10"
+          className={`hidden md:block absolute left-0  ${
+            index_ % 3 == 0 ? `mt-[120px]` : `mt-[165px]`
+          } ml-10`}
           onClick={() => sliderLeft(elementRef.current)}
         />
         <HiOutlineChevronRight
-          className="hidden md:block absolute right-0 mt-20 mr-10"
+          className={`hidden md:block absolute right-0 ${
+            index_ % 3 == 0 ? "mt-[120px]" : "mt-[160px]"
+          } mr-5`}
           onClick={() => sliderRight(elementRef.current)}
         />
       </div>
       <div
-        className="flex overflow-auto gap-3 scroll-smooth scrollbar-hide p-5"
+        className="flex overflow-auto gap-3 scroll-smooth scrollbar-hide p-2"
         ref={elementRef}
       >
         {moviesList.map((movie, index) => (
