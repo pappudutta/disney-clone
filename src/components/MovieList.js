@@ -33,7 +33,7 @@ function MovieList({ genreId, index_ }) {
     <div className="">
       <div className="text-[30px] cursor-pointer p-2">
         <HiChevronLeft
-          className={`hidden md:block absolute left-0  ${
+          className={`hidden md:block absolute left-0 ${
             index_ % 3 == 0 ? `mt-[120px]` : `mt-[165px]`
           } ml-10`}
           onClick={() => sliderLeft(elementRef.current)}

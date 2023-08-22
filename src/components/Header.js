@@ -74,7 +74,7 @@ function Header() {
           )}
         </div>
       </div>
-      <img src={avataar} alt="avataar" className="w-[60px]" />
+      <img src={avataar} alt="avataar" className="w-[30px]" />
     </div>
   );
 }

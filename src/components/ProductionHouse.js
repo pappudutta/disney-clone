@@ -52,7 +52,7 @@ function ProductionHouse() {
             muted
             loop
             playsInline
-            className="absolute top-0 rounded-sm z-0 opacity-0 hover:opacity-100 w-full"
+            className="absolute top-0 rounded-sm z-0 opacity-0 hover:opacity-100 w-full "
           ></video>
           <img src={proHouse.image} alt="brand logo" className="w-full z-[1]" />
         </div>
