@@ -10,7 +10,7 @@ function GenreMovieList() {
           index < 5 && (
             <div className="p-8 px-8 md:px-16">
               <h2 className="text-[20px] text-bold">{genre.name}</h2>
-              <MovieList />
+              <MovieList genreId={genre.id} index_={index} />
             </div>
           )
       )}
